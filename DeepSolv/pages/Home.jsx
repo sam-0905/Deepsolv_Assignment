@@ -60,8 +60,8 @@ const filteredPokemon = pokemon.filter((p) => {
          <div>
             <input type="text" placeholder="search your fav pokemon" value={searchText} onChange={handleSearch} className="search-input"/>
          </div>
-
-           <select name="" id="" onChange={(e) => setSelectedType(e.target.value)}>
+            <label className="filter-label">Filter by Type:</label>
+           <select className="type-filter" onChange={(e) => setSelectedType(e.target.value)}>
                 <option value="">All Types</option>
                 <option value="fire">Fire</option>
                 <option value="water">Water</option>
