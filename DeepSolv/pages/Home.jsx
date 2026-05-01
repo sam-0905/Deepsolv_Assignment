@@ -51,7 +51,7 @@ const filteredPokemon = pokemon.filter((p) => p.name.toLowerCase().includes(sear
         <h2>No Pokemon found</h2>
         )}
 
-         <div>
+         <div className="pagination">
             <button disabled={page === 0} onClick={() => setPage((prev) => prev - 1 )}>Prev</button>
             <span>Page :{page + 1}</span>
             <button onClick={() => setPage((prev) => prev + 1 )}>Next</button>
