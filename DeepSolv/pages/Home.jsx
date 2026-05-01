@@ -38,8 +38,8 @@ const filteredPokemon = pokemon.filter((p) => p.name.toLowerCase().includes(sear
     }
         return (
         <>
-        {loading && <h1>Loading........</h1>}
-         <input type="text" placeholder="search pokemon" value={searchText} onChange={handleSearch} className="search-input"/>
+        {loading && <h1 className="loading">Loading........</h1>}
+         <input type="text" placeholder="search your fav pokemon" value={searchText} onChange={handleSearch} className="search-input"/>
         <h1>Pokemon List</h1>
 
         {!loading && (
@@ -48,7 +48,7 @@ const filteredPokemon = pokemon.filter((p) => p.name.toLowerCase().includes(sear
                 {filteredPokemon.map((p) => (
                 <PokemonCard data={p} key={p.name}/>
         ))}</div>):
-        <h2>No Pokemon found</h2>
+        <h2 className="not-found">No Pokemon found</h2>
         )}
 
          <div className="pagination">
