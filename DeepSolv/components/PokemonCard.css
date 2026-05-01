@@ -25,3 +25,15 @@
     object-fit: contain;
     margin-top: 10px;
 }
+
+.details-btn{
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color:antiquewhite;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: bold;
+    width: 80px;
+}
