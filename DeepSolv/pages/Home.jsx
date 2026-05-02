@@ -9,6 +9,7 @@ const [pokemon, setPokemon] = useState([]);
 const [loading, setLoading] = useState(true);
 const [searchText, setSearchText] = useState("");
 const [selectedType, setSelectedType] = useState("");
+const [favorite ,setFavorite] = useState([]);
 
 const [page, setPage] = useState(0);
 const limit = 20;
@@ -50,6 +51,19 @@ const filteredPokemon = pokemon.filter((p) => {
         }
         fetchData();
     }, [page])
+    
+    // Load favorites from localStorage
+    useEffect(() =>{
+        const storedFavorites = localStorage.getItem("favorites");
+        if(storedFavorites){
+            setFavorite(JSON.parse(storedFavorites));
+        }
+    },[])
+
+    // save to localStorage
+     useEffect(() => {
+        localStorage.setItem("favorites", JSON.stringify(favorite));
+     })
 
     function handleSearch(e){
         setSearchText(e.target.value);
