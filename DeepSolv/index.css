@@ -8,6 +8,34 @@ body{
     background-color:#ffde00;
 }
 
+.Header{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: auto;
+    border: 2px solid orangered;
+    border-bottom-left-radius: 10px;     
+    border-bottom-right-radius: 10px;
+}
+.Header h1{
+    color:#3D7DCA;
+    font-weight: 800;
+    font-family: fantasy;
+    padding: 7px;
+    cursor: pointer;
+}
+.Header a{
+    text-decoration: none;
+    color: #3D7DCA;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    padding: 1rem;
+}
 .Heading{
     text-align: center;
     color:#cc0000;
@@ -31,7 +59,18 @@ body{
     margin-left: auto;
     cursor: pointer;
 }
+.search-input::placeholder{
+    color: #999;
+    font-size: 16px;
+    letter-spacing: 10px;
 
+}
+.search-input::placeholder:focus{
+    color: #333;
+}
+.search-input::placeholder:hover{
+    color: #333;
+}
 .loading{
     display: flex;
     justify-content: center;
