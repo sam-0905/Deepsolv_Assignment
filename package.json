@@ -1,10 +1,10 @@
 {
-  "name": "deepsolv_assignment",
+  "name": "Poke Explorer",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel DeepSolv/index.html",
-    "build": "parcel build DeepSolv/index.html"
+    "start": "parcel PokeExplorer/index.html",
+    "build": "parcel build PokeExplorer/index.html"
   },
   "dependencies": {
     "react": "^19.2.5",
